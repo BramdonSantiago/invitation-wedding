@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,6 +25,71 @@ body {
         width: 64px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.hero {
+    background-image: url('../img/wedding-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+    background-attachment: fixed;
+    color: #FFF;
+    position: relative;
+    .top-hero {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @media(min-width: 1200px) {
+            top: 90px;
+            right: 90px;
+        }
+    }
+    .bottom-hero {
+        position: absolute;
+        bottom: 90px;
+        left: 20px;
+        @media(min-width: 1200px) {
+            bottom: 90px;
+            left: 90px;
+        }
+    }
+    .message-top {
+        font-size: 3rem;
+        line-height: 1;
+        @media(min-width: 1200px) {
+            font-size: 4rem;
+        }
+        span {
+            font-family: "Alex Brush", cursive;
+        }
+    }
+    .names-wedding {
+        font-size: 3rem;
+        font-family: "Alex Brush", cursive;
+        line-height: 1;
+        margin-bottom: 2rem;
+        @media(min-width: 1200px) {
+            font-size: 4rem;
+        }
+    }
+    .date-wedding {
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+        margin-bottom: 0;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        @media(min-width: 1200px) {
+            font-size: 2.250rem;
+        }
+    }
+    .location-wedding {
+        font-size: 1.250rem;
+        line-height: 1;
+        @media(min-width: 1200px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
