@@ -246,6 +246,20 @@ body {
     background-repeat: no-repeat;
 }
 
+.music-content {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    z-index: 4;
+}
+
 @keyframes animateWeddingCouple {
     from {
         transform: scale(1);
