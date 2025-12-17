@@ -259,6 +259,7 @@ body {
     color: #FFF;
     z-index: 4;
     translate: 0 -50%;
+    backdrop-filter: blur(2px);
 }
 
 @keyframes animateWeddingCouple {
