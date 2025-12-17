@@ -238,7 +238,7 @@ body {
         animation: bottom-title linear both;
         -webkit-animation: bottom-title linear both;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry -20% cover 30%;
     }
 }
 
@@ -447,18 +447,17 @@ body {
 
 @keyframes bottom-title {
     from {
-        transform: translateY(400px);
-        -webkit-transform: translateY(400px);
-        -moz-transform: translateY(400px);
-        -ms-transform: translateY(400px);
-        -o-transform: translateY(400px);
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
     }
-
     to {
-        transform: translateY(-400px);
-        -webkit-transform: translateY(-400px);
-        -moz-transform: translateY(-400px);
-        -ms-transform: translateY(-400px);
-        -o-transform: translateY(-400px);
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
     }
 }
