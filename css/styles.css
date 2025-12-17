@@ -233,8 +233,12 @@ body {
     font-size: 5rem;
     line-height: 1;
 
-    &.footer {
+    &.names-weidding-couple-footer {
         font-size: 2.5rem;
+        animation: bottom-title linear both;
+        -webkit-animation: bottom-title linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
     }
 }
 
@@ -267,7 +271,7 @@ body {
         color: #525252;
 
         &.time-event {
-            font-size: 1.1250rem;
+            font-size: 1.250rem;
             /* transform-origin: center; */
             animation: grow-title linear both;
             -webkit-animation: grow-title linear both;
@@ -433,9 +437,28 @@ body {
 
 @keyframes grow-title {
     from {
-        font-size: 1.1250rem;
+        font-size: 1.250rem;
     }
+
     to {
         font-size: 1.5rem;
+    }
+}
+
+@keyframes bottom-title {
+    from {
+        transform: translateY(400px);
+        -webkit-transform: translateY(400px);
+        -moz-transform: translateY(400px);
+        -ms-transform: translateY(400px);
+        -o-transform: translateY(400px);
+    }
+
+    to {
+        transform: translateY(-400px);
+        -webkit-transform: translateY(-400px);
+        -moz-transform: translateY(-400px);
+        -ms-transform: translateY(-400px);
+        -o-transform: translateY(-400px);
     }
 }
