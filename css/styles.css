@@ -302,6 +302,7 @@ body {
     h2 {
         font-size: 2.5rem;
         font-family: "Alex Brush", cursive;
+        line-height: 1;
     }
     h3 {
         font-size: 1.5rem;
