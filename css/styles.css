@@ -295,6 +295,22 @@ body {
     }
 }
 
+.section-our-parents {
+    color: #FFF;
+    /* background-color: #9eb4cc; */
+    background-color: #6984a1;
+    h2 {
+        font-size: 2.5rem;
+        font-family: "Alex Brush", cursive;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .name-parent {
+        font-size: 1.125rem;
+    }
+}
+
 
 
 .footer {
