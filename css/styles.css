@@ -196,6 +196,7 @@ body {
     padding: 12px 2rem;
     text-align: center;
     text-decoration: none;
+    box-shadow: none;
     &.btn-primary {
         background-color: #9eb4cc;
         font-weight: 600;
