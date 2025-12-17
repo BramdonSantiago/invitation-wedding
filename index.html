@@ -212,15 +212,17 @@
                 if (window.scrollY > 100) {
                     music.play().catch(() => { });
                     played = true;
-                    controlMusic.classList.remove('fa-play');
-                    controlMusic.classList.add('fa-pause');
+                    if (music.play) {
+                        controlMusic.classList.remove('fa-play');
+                        controlMusic.classList.add('fa-pause');
+                    }
                 }
             });
 
             controlMusic.addEventListener("click", controlTheMusic);
 
             function controlTheMusic() {
-                if (controlMusic.classList.contains('fa-pause')) {
+                if (controlMusic.classList.contains('fa-pause') && music.play) {
                     controlMusic.classList.remove('fa-pause');
                     controlMusic.classList.add('fa-play');
                     music.pause();
