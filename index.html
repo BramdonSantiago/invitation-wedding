@@ -137,7 +137,7 @@
         </footer>
 
         <div>
-            <audio autoplay loop id="music" src="audio/AliciaKeys-IfIAin'tGotYou.mp3"></audio>
+            <audio id="music" src="audio/AliciaKeys-IfIAin'tGotYou.mp3"></audio>
             <div class="music-content">
                 <i id="control-music" class="fa-solid fa-pause"></i>
             </div>
@@ -206,9 +206,17 @@
         document.addEventListener("DOMContentLoaded", function () {
             const music = document.getElementById("music");
             const controlMusic = document.getElementById("control-music");
-    
+            let played = false;
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 100) {
+                    music.play().catch(() => { });
+                    played = true;
+                }
+            });
+
             controlMusic.addEventListener("click", controlTheMusic);
-    
+
             function controlTheMusic() {
                 if (controlMusic.classList.contains('fa-pause')) {
                     controlMusic.classList.remove('fa-pause');
