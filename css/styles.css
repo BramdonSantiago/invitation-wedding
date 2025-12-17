@@ -95,8 +95,11 @@ body {
 
 .image-content-wedding-couple {
     position: relative;
-    height: 100%;
+    height: 25rem;
     overflow: hidden;
+    @media(min-width: 1200px) {
+        height: 100%;
+    }
     img {
         width: 100%;
         height: 100%;
