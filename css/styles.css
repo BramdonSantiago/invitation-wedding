@@ -12,6 +12,27 @@ body {
 }
 
 .swiper {
+    position: static !important;
+}
+
+.swiper-container-aux {
+    position: relative;
+}
+
+.swiper {
+    .swiper-pagination {
+        bottom: -40px !important;
+        .swiper-pagination-bullet {
+            width: 13px;
+            height: 13px;
+            &.swiper-pagination-bullet-active {
+                background-color: #9d8a8d;
+            }
+        }
+    }
+}
+
+.swiper {
     &[thumbsSlider] {
         .swiper-slide {
             opacity: 0.4;
@@ -299,16 +320,40 @@ body {
     color: #FFF;
     /* background-color: #9eb4cc; */
     background-color: #6984a1;
+
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-family: "Alex Brush", cursive;
         line-height: 1;
     }
+
     h3 {
         font-size: 1.5rem;
     }
+
     .name-parent {
         font-size: 1.125rem;
+    }
+}
+
+.section-our-godparents {
+    background-color: #F5F5F5;
+    h2 {
+        font-size: 3rem;
+        font-family: "Alex Brush", cursive;
+        line-height: 1;
+    }
+    .singular-godparent {
+        text-align: center;
+        .type-godparent {
+            font-size: 1.5rem;
+            color: #9d8a8d;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .names-godparents {
+            font-size: 1.125rem;
+        }
     }
 }
 

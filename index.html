@@ -77,8 +77,10 @@
                                     Diciembre de 2026</p>
                                 <p class="data-event-widding time-event mb-6"><i
                                         class="fa-solid fa-clock mr-2"></i>12:00 PM</p>
-                                <p class="data-event-widding mb-6"><i class="fa-solid fa-church mr-2"></i>Parroquia de San Juan</p>
-                                <p class="data-event-widding"><i class="fa-solid fa-location-arrow mr-2"></i>J. Jesús Montaño No.57, Centro, CP 38961 Cerano, Gto.</p>
+                                <p class="data-event-widding mb-6"><i class="fa-solid fa-church mr-2"></i>Parroquia de
+                                    San Juan</p>
+                                <p class="data-event-widding"><i class="fa-solid fa-location-arrow mr-2"></i>J. Jesús
+                                    Montaño No.57, Centro, CP 38961 Cerano, Gto.</p>
                                 <div class="mt-8">
                                     <a href="https://www.google.com/maps?q=20.1071753,-101.3876341" target="_blank"
                                         rel="noopener" class="btn btn-primary w-full xl:w-auto">Ver en el mapa</a>
@@ -94,7 +96,8 @@
                                     Diciembre de 2026</p>
                                 <p class="data-event-widding time-event mb-6"><i class="fa-solid fa-clock mr-2"></i>1:00
                                     PM</p>
-                                <p class="data-event-widding mb-6"><i class="fa-solid fa-champagne-glasses mr-2"></i>Salón nombre</p>
+                                <p class="data-event-widding mb-6"><i
+                                        class="fa-solid fa-champagne-glasses mr-2"></i>Salón nombre</p>
                                 <p class="data-event-widding"><i class="fa-solid fa-location-arrow mr-2"></i>Calle 24
                                     de febrero Col Jacales, CP 38961 Cerano, Gto.</p>
                                 <div class="mt-10">
@@ -107,23 +110,63 @@
                 </div>
             </div>
         </div>
-        <section class="section-our-parents my-20 py-10">
-            <div class="mb-12">
-                <h2 class="text-center">Nuestros padres</h2>
+        <section class="section-our-parents mt-20 py-10">
+            <div class="text-center mb-12">
+                <h2>Nuestros padres</h2>
             </div>
             <div class="xl:flex xl:justify-center">
                 <div class="xl:w-3/12 mb-12 xl:mb-0">
                     <div class="text-center">
                         <h3 class="mb-6">DE LA NOVIA</h3>
-                        <p class="name-parent mb-3">Nombre apellido</p>
-                        <p class="name-parent mb-3">Nombre apellido</p>
+                        <p class="name-parent mb-3">Margarita Lemus A.</p>
+                        <p class="name-parent mb-3">Gonzalo Murillo G.</p>
                     </div>
                 </div>
                 <div class="xl:w-3/12">
                     <div class="text-center">
                         <h3 class="mb-6">DEL NOVIO</h3>
-                        <p class="name-parent mb-3">Julisa Cardoso</p>
-                        <p class="name-parent mb-3">Luis Santiago</p>
+                        <p class="name-parent mb-3">Julisa Cardoso F.</p>
+                        <p class="name-parent mb-3">Luis Alonso Santiago C.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-our-godparents pt-10 pb-30">
+            <div class="text-center mb-12">
+                <h2>Nuestros padrinos</h2>
+            </div>
+            <div class="flex justify-center">
+                <div class="xl:w-3/12">
+                    <div class="swiper-container-aux">
+                        <div class="swiper swiper-our-godparents">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="singular-godparent">
+                                        <h3 class="type-godparent">Tipo padrino</h3>
+                                        <p class="names-godparents">Nombre(s) padrino(s)</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="singular-godparent">
+                                        <h3 class="type-godparent">Tipo padrino</h3>
+                                        <p class="names-godparents">Nombre(s) padrino(s)</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="singular-godparent">
+                                        <h3 class="type-godparent">Tipo padrino</h3>
+                                        <p class="names-godparents">Nombre(s) padrino(s)</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="singular-godparent">
+                                        <h3 class="type-godparent">Tipo padrino</h3>
+                                        <p class="names-godparents">Nombre(s) padrino(s)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,6 +281,20 @@
 
 
     <script>
+        const swiperOurGodparents = new Swiper('.swiper-our-godparents', {
+            autoHeight: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
         const swiperWeddingCoupleThumbs = new Swiper('.swiper-photos-wedding-couple-thumbs', {
             freeMode: true,
             watchSlidesProgress: true,
