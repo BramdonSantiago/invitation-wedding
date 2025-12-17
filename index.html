@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/simplyCountdown.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -51,11 +53,12 @@
                             <p class="text-center names-weidding-couple">Brayan <br> <span
                                     class="conector-wedding-couple">&</span> <br> Angie</p>
                             <div class="mt-8 mx-auto text-center">
-                                <p class="text-information-date-wedding">Nuestra boda, <span>Sabado 19 de Diciembre de 2026</span></p>
+                                <p class="text-information-date-wedding">Nuestra boda, <span>Sabado 19 de Diciembre de
+                                        2026</span></p>
                                 <div class="countdown-container mt-8">
-                                        <div class="simply-countdown" id="countdown">
-                                            <!-- JS SimplyCountdown use -->
-                                        </div>
+                                    <div class="simply-countdown" id="countdown">
+                                        <!-- JS SimplyCountdown use -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -68,9 +71,11 @@
                         <div class="singular-event-wedding py-8 px-12 xl:py-8">
                             <h2 class="title-text-event-wedding">Ceremonia religiosa</h2>
                             <p class="data-event-widding mb-2"><i class="fa-solid fa-clock mr-2"></i>12:00 PM</p>
-                            <p class="data-event-widding mb-2"><i class="fa-solid fa-location-arrow mr-2"></i>Parroquia de San Juan, CP 38961 Cerano, Gto.</p>
+                            <p class="data-event-widding mb-2"><i class="fa-solid fa-location-arrow mr-2"></i>Parroquia
+                                de San Juan, CP 38961 Cerano, Gto.</p>
                             <div class="mt-8">
-                                <a href="https://www.google.com/maps?q=20.1071753,-101.3876341" target="_blank" rel="noopener" class="btn btn-primary">Ver en el mapa</a>
+                                <a href="https://www.google.com/maps?q=20.1071753,-101.3876341" target="_blank"
+                                    rel="noopener" class="btn btn-primary">Ver en el mapa</a>
                             </div>
                         </div>
                     </div>
@@ -78,9 +83,11 @@
                         <div class="singular-event-wedding py-8 px-12 xl:py-8">
                             <h2 class="title-text-event-wedding">Recepción del evento</h2>
                             <p class="data-event-widding mb-2"><i class="fa-solid fa-clock mr-2"></i>1:00 PM</p>
-                            <p class="data-event-widding mb-2"><i class="fa-solid fa-location-arrow mr-2"></i>Calle 24 de febrero Col Jacales, CP 38961 Cerano, Gto.</p>
+                            <p class="data-event-widding mb-2"><i class="fa-solid fa-location-arrow mr-2"></i>Calle 24
+                                de febrero Col Jacales, CP 38961 Cerano, Gto.</p>
                             <div class="mt-8">
-                                <a href="https://www.google.com/maps?q=20.115565,-101.3830925" target="_blank" rel="noopener" class="btn btn-primary">Ver en el mapa</a>
+                                <a href="https://www.google.com/maps?q=20.115565,-101.3830925" target="_blank"
+                                    rel="noopener" class="btn btn-primary">Ver en el mapa</a>
                             </div>
                         </div>
                     </div>
@@ -129,8 +136,11 @@
             <p class="names-weidding-couple footer">Brayan & Angie</p>
         </footer>
 
-        <div class="music-content">
-            <i class="fa-solid fa-pause"></i>
+        <div>
+            <audio autoplay loop id="music" src="audio/AliciaKeys-IfIAin'tGotYou.mp3"></audio>
+            <div class="music-content">
+                <i id="control-music" class="fa-solid fa-pause"></i>
+            </div>
         </div>
     </div>
 
@@ -190,6 +200,27 @@
                 },
             },
         });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const music = document.getElementById("music");
+            const controlMusic = document.getElementById("control-music");
+    
+            controlMusic.addEventListener("click", controlTheMusic);
+    
+            function controlTheMusic() {
+                if (controlMusic.classList.contains('fa-pause')) {
+                    controlMusic.classList.remove('fa-pause');
+                    controlMusic.classList.add('fa-play');
+                    music.pause();
+                } else {
+                    controlMusic.classList.remove('fa-play');
+                    controlMusic.classList.add('fa-pause');
+                    music.play();
+                }
+            }
+        })
     </script>
 
 
