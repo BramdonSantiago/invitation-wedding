@@ -162,30 +162,38 @@ body {
     }
 }
 
+.title-text-event-wedding {
+    text-align: center;
+    font-size: 2.250rem;
+    font-family: "Alex Brush", cursive;
+    margin-bottom: 1rem;
+} 
+
 .singular-event-wedding {
     background-color: #FFF;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 18rem;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     corner-shape: scoop;
-    .title-text-event-wedding {
-        font-size: 1.5rem;
-        font-family: "Alex Brush", cursive;
-        margin-bottom: 1rem;
-    } 
     .data-event-widding {
         display: flex;
         align-items: center;
         line-height: 1;
+        font-size: 1.125rem;
     }
 }
 
 .btn {
     display: inline-block;
     padding: 12px 2rem;
+    text-align: center;
     text-decoration: none;
     &.btn-primary {
         background-color: #9eb4cc;
