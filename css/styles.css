@@ -22,9 +22,11 @@ body {
 .swiper {
     .swiper-pagination {
         bottom: -40px !important;
+
         .swiper-pagination-bullet {
             width: 13px;
             height: 13px;
+
             &.swiper-pagination-bullet-active {
                 background-color: #9d8a8d;
             }
@@ -151,9 +153,11 @@ body {
     min-height: 100dvh;
     background-attachment: fixed;
     color: #FFF;
+
     &.cta-wedding-couple-1 {
         background-image: url('../img/cta-wedding-couple-1.jpeg');
     }
+
     &.cta-wedding-couple-2 {
         background-image: url('../img/cta-wedding-couple-2.jpeg');
     }
@@ -264,6 +268,11 @@ body {
 
         &.time-event {
             font-size: 1.250rem;
+            /* transform-origin: center; */
+            animation: grow-title linear both;
+            -webkit-animation: grow-title linear both;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
         }
     }
 }
@@ -353,19 +362,23 @@ body {
 
 .section-our-godparents {
     background-color: #F5F5F5;
+
     h2 {
         font-size: 3rem;
         font-family: "Alex Brush", cursive;
         line-height: 1;
     }
+
     .singular-godparent {
         text-align: center;
+
         .type-godparent {
             font-size: 1.5rem;
             color: #9d8a8d;
             text-transform: uppercase;
             margin-bottom: 2rem;
         }
+
         .names-godparents {
             font-size: 1.125rem;
         }
@@ -397,6 +410,9 @@ body {
     backdrop-filter: blur(5px);
 }
 
+
+
+
 @keyframes animateWeddingCouple {
     from {
         transform: scale(1);
@@ -412,5 +428,14 @@ body {
         -moz-transform: scale(1.5);
         -ms-transform: scale(1.5);
         -o-transform: scale(1.5);
+    }
+}
+
+@keyframes grow-title {
+    from {
+        font-size: 1.250rem;
+    }
+    to {
+        font-size: 1.5rem;
     }
 }
