@@ -240,6 +240,7 @@ body {
         .simply-word {
             color: #525252 !important;
             font-family: "Jost", sans-serif !important;
+            font-size: 0.875rem !important;
         }
     }
 }
