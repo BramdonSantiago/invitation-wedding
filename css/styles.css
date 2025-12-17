@@ -267,7 +267,7 @@ body {
         color: #525252;
 
         &.time-event {
-            font-size: 1.250rem;
+            font-size: 1.1250rem;
             /* transform-origin: center; */
             animation: grow-title linear both;
             -webkit-animation: grow-title linear both;
@@ -433,7 +433,7 @@ body {
 
 @keyframes grow-title {
     from {
-        font-size: 1.250rem;
+        font-size: 1.1250rem;
     }
     to {
         font-size: 1.5rem;
