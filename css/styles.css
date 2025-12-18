@@ -417,8 +417,8 @@ body {
 
 
 .bottom-title {
-    animation: bottom-title ease-in 3s forwards;
-    -webkit-animation: bottom-title ease-in 3s forwards;
+    animation: bottom-title linear 3s forwards;
+    -webkit-animation: bottom-title linear 3s forwards;
 }
 
 
