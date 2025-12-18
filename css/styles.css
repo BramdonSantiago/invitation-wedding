@@ -373,8 +373,7 @@ body {
 }
 
 .section-our-godparents {
-    background-color: #F5F5F5;
-
+    /* background-color: #F5F5F5; */
     h2 {
         color: #9d8a8d;
         font-size: 3.250rem;
