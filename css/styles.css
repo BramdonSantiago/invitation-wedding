@@ -235,10 +235,6 @@ body {
 
     &.names-weidding-couple-footer {
         font-size: 2.5rem;
-        animation: bottom-title ease-in both;
-        -webkit-animation: bottom-title ease-in both;
-        animation-timeline: view();
-        animation-range: entry -50% cover 50%;
     }
 }
 
@@ -415,6 +411,10 @@ body {
 }
 
 
+.bottom-title {
+    animation: bottom-title ease-in 3s forwards;
+    -webkit-animation: bottom-title ease-in 3s forwards;
+}
 
 
 @keyframes animateWeddingCouple {
@@ -447,13 +447,17 @@ body {
 
 @keyframes bottom-title {
     from {
-        transform: translateY(200px);
-        -webkit-transform: translateY(200px);
-        -moz-transform: translateY(200px);
-        -ms-transform: translateY(200px);
-        -o-transform: translateY(200px);
+        opacity: 0;
+        font-size: 1rem;
+        transform: translateY(90px);
+        -webkit-transform: translateY(90px);
+        -moz-transform: translateY(90px);
+        -ms-transform: translateY(90px);
+        -o-transform: translateY(90px);
     }
     to {
+        opacity: 1;
+        font-size: 2.5rem;
         transform: translateY(0);
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
