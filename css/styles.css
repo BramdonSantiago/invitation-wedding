@@ -340,7 +340,7 @@ body {
     color: #FFF;
     /* background-color: #9eb4cc; */
     background-color: #6984a1;
-    min-height: 75dvh;
+    min-height: 100dvh;
     h2 {
         font-size: 3.250rem;
         line-height: 1;
@@ -374,7 +374,7 @@ body {
 
 .section-our-godparents {
     /* background-color: #F5F5F5; */
-    min-height: 75dvh;
+    min-height: 100dvh;
     h2 {
         color: #9d8a8d;
         font-size: 3.250rem;
