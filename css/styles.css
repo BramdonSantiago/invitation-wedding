@@ -232,10 +232,6 @@ body {
     /* color: #c9b37e; */
     font-size: 5rem;
     line-height: 1;
-
-    &.names-weidding-couple-footer {
-        font-size: 2.5rem;
-    }
 }
 
 .title-text-event-wedding {
@@ -392,6 +388,15 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    .names-weidding-couple-footer {
+        opacity: 0;
+        font-size: 1rem;
+        transform: translateY(90px);
+        -webkit-transform: translateY(90px);
+        -moz-transform: translateY(90px);
+        -ms-transform: translateY(90px);
+        -o-transform: translateY(90px);
+    }
 }
 
 .music-content {
