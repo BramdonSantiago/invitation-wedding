@@ -50,6 +50,15 @@ body {
     }
 }
 
+.swiper-container-aux {
+    background-image: url('../img/soga-2.png');
+    background-position: center;
+    background-size: contain;
+    min-height: 75dvw;
+    background-repeat: no-repeat;
+    padding-top: 5.5rem;
+}
+
 .header {
     position: sticky;
     top: 0;
