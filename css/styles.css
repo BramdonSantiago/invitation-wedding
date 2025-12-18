@@ -343,8 +343,11 @@ body {
 
     h2 {
         font-size: 3.250rem;
-        font-family: "Alex Brush", cursive;
         line-height: 1;
+        font-family: "Alex Brush", cursive;
+        span {
+            font-family: "Alex Brush", cursive;
+        }
     }
     .content-icon-section {
         img {
@@ -374,8 +377,11 @@ body {
 
     h2 {
         font-size: 3.250rem;
-        font-family: "Alex Brush", cursive;
         line-height: 1;
+        font-family: "Alex Brush", cursive;
+        span {
+            font-family: "Alex Brush", cursive;
+        }
     }
 
     .singular-godparent {
