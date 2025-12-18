@@ -376,11 +376,25 @@ body {
     background-color: #F5F5F5;
 
     h2 {
+        color: #9d8a8d;
         font-size: 3.250rem;
         line-height: 1;
         font-family: "Alex Brush", cursive;
         span {
             font-family: "Alex Brush", cursive;
+        }
+    }
+    .content-icon-section {
+        img {
+            width: 64px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: contain;
+            /* position: absolute;
+            top: -30px;
+            left: 50%;
+            translate: -50% 0;
+            z-index: 2; */
         }
     }
 
