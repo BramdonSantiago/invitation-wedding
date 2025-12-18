@@ -21,7 +21,8 @@ body {
 
 .swiper {
     .swiper-pagination {
-        bottom: -40px !important;
+        /* bottom: -40px !important; */
+        bottom: 0 !important;
 
         .swiper-pagination-bullet {
             width: 13px;
