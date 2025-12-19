@@ -248,6 +248,7 @@ body {
     text-align: center;
     font-size: 2.250rem;
     font-family: "Alex Brush", cursive;
+    color: #222;
     margin-bottom: 1rem;
 }
 
@@ -308,7 +309,7 @@ body {
 
 .text-information-date-wedding {
     font-size: 1.3rem;
-
+    color: #222;
     @media(min-width: 1200px) {
         font-size: 1.6rem;
     }
