@@ -383,7 +383,7 @@ body {
 }
 
 .section-our-godparents {
-    /* background-color: #F5F5F5; */
+    background-color: #F5F5F5;
     min-height: 100dvh;
     h2 {
         color: #9d8a8d;
