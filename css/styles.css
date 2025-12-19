@@ -21,9 +21,7 @@ body {
 
 .swiper {
     .swiper-pagination {
-        /* bottom: -40px !important; */
-        bottom: 0 !important;
-
+        bottom: -10px !important;
         .swiper-pagination-bullet {
             width: 13px;
             height: 13px;
@@ -52,12 +50,14 @@ body {
 }
 
 .swiper-container-aux {
-    background-image: url('../img/soga-3.png');
+    background-image: url('../img/soga-5.png');
     background-position: center;
     background-size: contain;
-    min-height: 20rem;
+    min-height: 30rem;
     background-repeat: no-repeat;
-    padding-top: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
