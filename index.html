@@ -37,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <header class="header">
+        <!-- <header class="header">
             <img src="img/ring-3.png" alt="">
-        </header>
+        </header> -->
         <div class="container mx-auto">
             <div class="pt-20 pb-10">
                 <div class="xl:flex">
@@ -198,82 +198,311 @@
 
         </div>
 
-        <div class="container mx-auto">
-            <div class="py-20">
-                <div class="swiper swiper-photos-wedding-couple mb-2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+        <section class="section-minute-to-minute py-10">
+            <div class="container">
+                <div class="text-center mb-18">
+                    <h2 class="mb-4">Minuto a minuto</h2>
+                </div>
+                <div id="timeline" class="timeline">
+                    <div class="singular-item">
+                        <span class="step-number">1</span>
+                        <h3 class="step-title">CEREMONIA</h3>
+                        <p class="step-text">Acompáñanos a recibir la bendición de Dios</p>
+                    </div>
+                    <div class="singular-item">
+                        <span class="step-number">2</span>
+                        <h3 class="step-title">RECEPCIÓN</h3>
+                        <p class="step-text">Tómate fotos con nosotros</p>
+                    </div>
+                    <div class="singular-item">
+                        <span class="step-number">3</span>
+                        <h3 class="step-title">CÓCTEL</h3>
+                        <p class="step-text">Brindemos por el inicio de una nueva vida.</p>
+                    </div>
+                    <div class="singular-item">
+                        <span class="step-number">4</span>
+                        <h3 class="step-title">CENA</h3>
+                        <p class="step-text">Disfruta de una deliciosa cena</p>
+                    </div>
+                    <img src="img/arrow-2.png" alt="" id="arrow-indicator" class="arrow-indicator">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-minute-to-minute py-10" style="display: none !important;">
+            <h2 class="text-center">Minuto a minuto</h2>
+            <!-- <svg viewBox="0 0 300 1400" class="wedding-arrow" width="100%" aria-hidden="true">
+                <path id="arrow-path" d="
+                    M150 20
+                    C95 120, 205 220, 150 340
+                    C95 460, 205 560, 150 680
+                    C95 800, 205 900, 150 1020
+                    C95 1140, 205 1220, 150 1320
+                " fill="none" stroke="#C7A45D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-dasharray="2 10" />
+
+                <path id="arrow-head" d="M150 1365 L142 1338 L158 1338 Z" fill="#C7A45D" opacity="0.85" />
+
+            </svg> -->
+
+            <!-- <svg viewBox="0 0 300 1000" class="wedding-arrow" width="100%" aria-hidden="true">
+                <path id="arrow-path" d="
+                M150 20
+                C95 85, 205 155, 150 245
+                C95 335, 205 405, 150 495
+                C95 585, 205 655, 150 745
+                C95 835, 205 905, 150 995
+    " fill="none" stroke="#C7A45D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-dasharray="2 10" />
+
+                <path id="arrow-head" d="M150 1000 L142 975 L158 975 Z" fill="#C7A45D" />
+            </svg> -->
+
+
+            <!-- <svg viewBox="0 0 300 1000" class="wedding-arrow" width="100%" aria-hidden="true">
+                <path id="arrow-path" d="
+      M150 20
+      C150 85, 150 155, 150 245
+      C150 335, 150 405, 150 495
+      C150 585, 150 655, 150 745
+      C150 835, 150 905, 150 995
+    " fill="none" stroke="#C7A45D" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 10"
+                    stroke-dashoffset="980" />
+                <path id="arrow-head" d="M150 1000 L146 980 L154 980 Z" fill="#C7A45D" />
+            </svg> -->
+
+            <!-- <svg viewBox="0 0 300 1000" class="wedding-arrow" id="wedding-arrow" width="100%" aria-hidden="true">
+  <path id="arrow-path"
+        d="
+        M150 20
+        C150 85, 150 155, 150 245
+        C150 335, 150 405, 150 495
+        C150 585, 150 655, 150 745
+        C150 835, 150 905, 150 995
+        "
+        fill="none"
+        stroke="#C7A45D"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-dasharray="2 10"
+        stroke-dashoffset="980" />
+  
+  <path id="arrow-head" d="M150 1000 L146 980 L154 980 Z" fill="#C7A45D" />
+</svg> -->
+
+            <!-- <svg viewBox="0 0 300 1000" width="100%" class="wedding-arrow">
+                <path id="arrow-path" d="M150 20
+       C150 85, 150 155, 150 245
+       C150 335, 150 405, 150 495
+       C150 585, 150 655, 150 745
+       C150 835, 150 905, 150 980" fill="none" stroke="#000" stroke-width="2"
+                    />
+            </svg> -->
+
+
+
+
+
+            <!-- 
+<svg viewBox="0 0 300 1000" class="wedding-arrow" width="100%" aria-hidden="true">
+  <path
+    id="arrow-path"
+    d="
+      M150 20
+      C130 60, 170 100, 150 140
+      C130 180, 170 220, 150 260
+      C130 300, 170 340, 150 380
+      C130 420, 170 460, 150 500
+      C130 540, 170 580, 150 620
+      C130 660, 170 700, 150 740
+      C130 780, 170 820, 150 860
+      C130 900, 170 940, 150 980
+    "
+    fill="none"
+    stroke="#C7A45D"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-dasharray="2 10"
+    stroke-dashoffset="980"
+  />
+
+  <path
+    id="arrow-head"
+    d="M150 1000 L146 980 L154 980 Z"
+    fill="#C7A45D"
+  />
+</svg> -->
+
+
+            <svg id="miSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 1400">
+                <line id="line" x1="25" y1="0" x2="25" y2="1400" stroke="blue" stroke-width="5" stroke-dasharray="2 10"
+                    stroke-dashoffset="1380" />
+            </svg>
+
+
+
+        </section>
+
+
+
+        <section class="py-10">
+            <div class="container mx-auto">
+                <div class="text-center mb-18">
+                    <h2 class="mb-4">Dije que <span>sí</span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sed eos quidem. Consequatur minus
+                        aspernatur sapiente ut veniam, accusantium doloribus pariatur omnis similique nisi! Voluptatem
+                        dolor, natus quos ipsa hic quisquam rerum magnam odit itaque recusandae pariatur dolore.
+                        Perferendis autem, quia rerum beatae molestiae voluptatem excepturi facilis, laudantium illo,
+                        labore blanditiis perspiciatis. Sunt nihil rem praesentium ipsa ut eum, dicta autem eos est enim
+                        explicabo aperiam officia ipsum animi, deleniti, consectetur aliquam amet porro repellendus?
+                        Harum quam sint optio vel sit dignissimos at, atque, ut illo, ipsam suscipit debitis cumque.</p>
+                </div>
+                <div class="mt-4 mb-10">
+                    <div class="swiper swiper-photos-wedding-couple mb-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                    </div>
+                    <div thumbsSlider class="swiper swiper-photos-wedding-couple-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div thumbsSlider class="swiper swiper-photos-wedding-couple-thumbs">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+                <div class="mt-4 mb-10">
+                    <div class="swiper swiper-photos-wedding-couple mb-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                    </div>
+                    <div thumbsSlider class="swiper swiper-photos-wedding-couple-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-1.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-2.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-3.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-4.jpg" alt="" class="w-full">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-5.jpg" alt="" class="w-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="img/wedding-couple-exemple-6.jpg" alt="" class="w-full">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <footer class="footer text-center py-20">
-            <p class="names-weidding-couple names-weidding-couple-footer">Berenice & Brayan</p>
+            <p id="texto-2" class="names-weidding-couple names-weidding-couple-footer">Berenice & Brayan</p>
         </footer>
 
         <div>
@@ -409,11 +638,32 @@
         })
     </script>
 
+
     <script>
+        const texto = "Berenice y Brayan";
+        const elementoTexto1 = "texto";
+        const elementoTexto2 = "texto-2";
+
+        let i = 0;
+        function escribir(elementoTexto) {
+            let elementoHTML = document.getElementById(elementoTexto);
+            if (i < texto.length) {
+                elementoHTML.textContent += texto.charAt(i);
+                i++;
+                setTimeout(() => escribir(elementoTexto), 90); // velocidad
+            }
+        }
+
+
+        escribir(elementoTexto1);
+
+
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener("scroll", () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 40) {
                     document.querySelector(".names-weidding-couple-footer").classList.add("bottom-title");
+                    // i = 0;
+                    // escribir(elementoTexto2);
                 } else {
                     document.querySelector(".names-weidding-couple-footer").classList.remove("bottom-title");
                 }
@@ -421,22 +671,94 @@
         })
     </script>
 
+    <!-- <script>
+        const arrowHead = document.getElementById("arrow-head");
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const maxScroll = document.body.scrollHeight - window.innerHeight;
+            const progress = Math.min(scrollTop / maxScroll, 1);
+
+            // Desplaza la flecha hacia abajo según scroll
+            arrowHead.style.transform = `translateY(${progress * 1000}px)`;
+        });
+    </script> -->
+
+
+    <!-- <script>
+        const path = document.getElementById("arrow-path");
+        const length = path.getTotalLength();
+
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+
+        window.addEventListener("scroll", () => {
+            const svg = document.querySelector(".wedding-arrow");
+            const rect = svg.getBoundingClientRect();
+
+            const start = window.innerHeight;
+            const end = -rect.height;
+
+            let progress = (rect.top - start) / (end - start);
+            progress = Math.min(Math.max(progress, 0), 1);
+
+            path.style.strokeDashoffset = length * (1 - progress);
+            console.log(progress);
+        });
+    </script> -->
+
+    <!-- <script>
+        const path = document.getElementById("arrow-path");
+        const length = path.getTotalLength();
+
+        path.style.strokeDashoffset = length;
+
+        /* Scroll */
+        window.addEventListener("scroll", () => {
+            const svg = document.querySelector(".wedding-arrow");
+            const rect = svg.getBoundingClientRect();
+
+            const start = window.innerHeight;
+            const end = -rect.height;
+
+            let progress = (rect.top - start) / (end - start);
+            progress = Math.min(Math.max(progress, 0), 1);
+
+            path.style.strokeDashoffset = length * (1 - progress);
+        });
+
+    </script> -->
+
 
     <script>
-        const texto = "Berenice y Brayan";
-        const elemento = document.getElementById("texto");
-        let i = 0;
+        document.addEventListener("DOMContentLoaded", function () {
+            const timeline = document.getElementById("timeline");
+            const arrowIndicator = document.getElementById("arrow-indicator");
 
-        function escribir() {
-            if (i < texto.length) {
-                elemento.textContent += texto.charAt(i);
-                i++;
-                setTimeout(escribir, 90); // velocidad
-            }
-        }
+            window.addEventListener("scroll", () => {
+                const timelineRect = timeline.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
 
-        escribir();
+                // Cuánto del timeline ha sido scrolleado
+                const scrollDentro = windowHeight - timelineRect.top;
+
+                // Altura total usable del timeline
+                const alturaTimeline = timeline.offsetHeight + windowHeight;
+
+                // Progreso normalizado (0 → 1)
+                let progreso = scrollDentro / alturaTimeline;
+
+                // Limitar valores
+                progreso = Math.min(Math.max(progreso, 0), 1);
+
+                // Movimiento controlado
+                const desplazamiento = progreso * 720;
+
+                arrowIndicator.style.transform = `translateY(${desplazamiento}px)`;
+            });
+        })
     </script>
+
+
 
 
 </body>

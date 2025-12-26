@@ -1,3 +1,11 @@
+@scroll-timeline arrow-scroll {
+    source: auto;
+    /* scroll del viewport */
+    orientation: block;
+    /* vertical */
+    scroll-offsets: 0% 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,6 +30,7 @@ body {
 .swiper {
     .swiper-pagination {
         bottom: -10px !important;
+
         .swiper-pagination-bullet {
             width: 13px;
             height: 13px;
@@ -310,6 +319,7 @@ body {
 .text-information-date-wedding {
     font-size: 1.3rem;
     color: #222;
+
     @media(min-width: 1200px) {
         font-size: 1.6rem;
     }
@@ -352,14 +362,17 @@ body {
     /* background-color: #9eb4cc; */
     background-color: #6984a1;
     min-height: 100dvh;
+
     h2 {
         font-size: 3.250rem;
         line-height: 1;
         font-family: "Alex Brush", cursive;
+
         span {
             font-family: "Alex Brush", cursive;
         }
     }
+
     .content-icon-section {
         img {
             width: 210px;
@@ -386,15 +399,18 @@ body {
 .section-our-godparents {
     background-color: #F5F5F5;
     min-height: 100dvh;
+
     h2 {
         color: #9d8a8d;
         font-size: 3.250rem;
         line-height: 1;
         font-family: "Alex Brush", cursive;
+
         span {
             font-family: "Alex Brush", cursive;
         }
     }
+
     .content-icon-section {
         img {
             width: 64px;
@@ -427,6 +443,93 @@ body {
     }
 }
 
+.section-minute-to-minute {
+    background-color: #F5F5F5;
+
+    h2 {
+        font-family: "Alex Brush", cursive;
+        font-size: 2.5rem;
+        line-height: 1;
+        color: #222;
+    }
+
+    .timeline {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        position: relative;
+
+        .singular-item {
+            width: calc(50% - 5rem);
+            color: #525252;
+
+            &:nth-child(2n + 1) {
+                text-align: end;
+            }
+
+            &:nth-child(2n) {
+                margin-top: 10rem;
+            }
+
+            .step-number {
+                color: #9d8a8d;
+                font-size: 1.250rem;
+            }
+
+            .step-title {
+                color: #9eb4cc;
+                font-size: 1.250rem;
+                margin-bottom: 2rem;
+            }
+
+            .step-text {
+                font-size: 1.125rem;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100%;
+            border-left: 1px dashed #6984a1;
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+
+        .arrow-indicator {
+            position: absolute;
+            top: -90px;
+            left: 50%;
+            width: 48px;
+            translate: -50% 0;
+        }   
+    }
+}
+
+
+
+/* .wedding-arrow {
+    height: 100%;
+} */
+
+/* #arrow-path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+} */
+
+
+#miSVG {
+    display: block;
+    margin: 50px auto;
+    width: 50px;
+    height: 1400px;
+}
+
+
+
 
 
 .footer {
@@ -434,7 +537,12 @@ body {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
     .names-weidding-couple-footer {
+        font-size: 2.5rem;
+    }
+
+    /* .names-weidding-couple-footer {
         opacity: 0;
         font-size: 1rem;
         transform: translateY(90px);
@@ -442,7 +550,7 @@ body {
         -moz-transform: translateY(90px);
         -ms-transform: translateY(90px);
         -o-transform: translateY(90px);
-    }
+    } */
 }
 
 .music-content {
@@ -501,13 +609,13 @@ body {
 @keyframes bottom-title {
     from {
         opacity: 0;
-        font-size: 1rem;
         transform: translateY(90px);
         -webkit-transform: translateY(90px);
         -moz-transform: translateY(90px);
         -ms-transform: translateY(90px);
         -o-transform: translateY(90px);
     }
+
     to {
         opacity: 1;
         font-size: 2.5rem;
