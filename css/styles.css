@@ -459,6 +459,7 @@ body {
         flex-wrap: wrap;
         gap: 5rem;
         position: relative;
+        overflow: hidden;
 
         .singular-item {
             width: calc(50% - 5rem);
