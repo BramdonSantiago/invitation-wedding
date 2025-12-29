@@ -234,7 +234,8 @@
             <div class="container mx-auto">
                 <div class="text-center mb-18">
                     <h2 class="mb-4">Dije que <span>Sí</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae nesciunt nihil eius officiis? Illum cum aliquam eius dicta ab.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero beatae nesciunt nihil eius
+                        officiis? Illum cum aliquam eius dicta ab.</p>
                 </div>
                 <div class="mt-4 mb-10">
                     <div class="swiper swiper-photos-wedding-couple-1 mb-2">
@@ -391,7 +392,22 @@
                 <i id="control-music" class="fa-solid fa-play"></i>
             </div>
         </div>
+
+        <div id="loader-content" class="loader-content">
+            <div class="loader"></div>
+        </div>
     </div>
+
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader-content");
+
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 4000);
+        });
+    </script>
 
 
 
@@ -573,8 +589,9 @@
                 }
             }
 
-
-            escribir(elementoTexto1);
+            setTimeout(() => {
+                escribir(elementoTexto1);
+            }, 5000);
         })
 
 
@@ -622,6 +639,7 @@
             });
         })
     </script>
+
 
 
 
