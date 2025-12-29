@@ -504,6 +504,20 @@ body {
     }
 }
 
+.section-she-said-yes {
+    h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+        color: #222;
+        span {
+            font-family: "Alex Brush", cursive;
+        }
+    }
+    p {
+        color: #525252;
+    }
+}
+
 
 
 /* .wedding-arrow {
