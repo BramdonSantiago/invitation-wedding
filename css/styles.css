@@ -610,8 +610,8 @@ body {
 
 #texto {
     opacity: 0;
-    animation: fadeIn 3s ease forwards 3s;
-    -webkit-animation: fadeIn 3s ease forwards 3s;
+    animation: fadeIn 1s ease forwards 1s;
+    -webkit-animation: fadeIn 1s ease forwards 1s;
 }
 
 @keyframes fadeIn {
