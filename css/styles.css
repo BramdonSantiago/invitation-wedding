@@ -507,7 +507,7 @@ body {
             left: 50%;
             width: 18px;
             translate: -50% 0;
-        }   
+        }
     }
 }
 
@@ -605,6 +605,18 @@ body {
 
     to {
         font-size: 1.5rem;
+    }
+}
+
+#texto {
+    opacity: 0;
+    animation: fadeIn 3s ease forwards 3s;
+    -webkit-animation: fadeIn 3s ease forwards 3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 

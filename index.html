@@ -609,18 +609,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             const music = document.getElementById("music");
             const controlMusic = document.getElementById("control-music");
-            // let played = false;
-
-            // window.addEventListener("scroll", () => {
-            //     if (window.scrollY > 100) {
-            //         music.play().catch(() => { });
-            //         played = true;
-            //         if (music.play) {
-            //             controlMusic.classList.remove('fa-play');
-            //             controlMusic.classList.add('fa-pause');
-            //         }
-            //     }
-            // });
 
             controlMusic.addEventListener("click", controlTheMusic);
 
@@ -639,10 +627,12 @@
     </script>
 
 
+
+
+
     <script>
         const texto = "Berenice y Brayan";
         const elementoTexto1 = "texto";
-        const elementoTexto2 = "texto-2";
 
         let i = 0;
         function escribir(elementoTexto) {
@@ -657,6 +647,10 @@
 
         escribir(elementoTexto1);
 
+
+    </script>
+
+    <script>
 
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener("scroll", () => {
