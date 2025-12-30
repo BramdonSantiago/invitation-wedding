@@ -427,7 +427,28 @@
             setTimeout(() => {
                 loader.classList.remove('show-loader');
             }, 3000);
+
+            const texto = "Berenice y Brayan";
+            const elementoTexto1 = "texto";
+
+            let i = 0;
+            function escribir(elementoTexto) {
+                let elementoHTML = document.getElementById(elementoTexto);
+                if (i < texto.length) {
+                    elementoHTML.textContent += texto.charAt(i);
+                    i++;
+                    setTimeout(() => escribir(elementoTexto), 90); // velocidad
+                }
+            }
+
+            setTimeout(() => {
+                escribir(elementoTexto1);
+            }, 5000);
         });
+    </script>
+
+
+
     </script>
 
 
@@ -594,29 +615,6 @@
         })
     </script>
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const texto = "Berenice y Brayan";
-            const elementoTexto1 = "texto";
-
-            let i = 0;
-            function escribir(elementoTexto) {
-                let elementoHTML = document.getElementById(elementoTexto);
-                if (i < texto.length) {
-                    elementoHTML.textContent += texto.charAt(i);
-                    i++;
-                    setTimeout(() => escribir(elementoTexto), 90); // velocidad
-                }
-            }
-
-            setTimeout(() => {
-                escribir(elementoTexto1);
-            }, 5000);
-        })
-
-
-    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
