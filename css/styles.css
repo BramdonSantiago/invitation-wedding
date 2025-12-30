@@ -61,6 +61,11 @@ body {
     align-items: center;
 }
 
+.no-scroll {
+    height: 100dvh;
+    overflow: hidden;
+}
+
 
 /* HTML: <div class="loader"></div> */
 .loader-content {
