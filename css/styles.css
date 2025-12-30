@@ -164,9 +164,13 @@ body {
     text-align: center;
 
     img {
-        width: 64px;
+        width: 40px;
         margin-left: auto;
         margin-right: auto;
+        animation: grow-img linear both;
+        -webkit-animation: grow-img linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
     }
 }
 
@@ -719,6 +723,15 @@ body {
 
     to {
         font-size: 1.5rem;
+    }
+}
+@keyframes grow-img {
+    from {
+        width: 40px;
+    }
+
+    to {
+        width: 64px;
     }
 }
 
