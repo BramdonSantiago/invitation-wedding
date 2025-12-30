@@ -94,13 +94,11 @@ body {
         }
     } */
     .loader {
-        font-weight: bold;
-        font-family: monospace;
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 1.2em;
         display: inline-grid;
-        /* font-family: "Alex Brush", cursive; */
-        font-family: "Square Peg", cursive;
+        font-family: "Alex Brush", cursive;
+        /* font-family: "Square Peg", cursive; */
     }
     .loader:before,
     .loader:after {
@@ -123,7 +121,7 @@ body {
 @keyframes l15 {
     80%,
     100% {
-        text-shadow: 0 calc(var(--s, 1)*-1.2em) 0 #000, 0 0 0 #000
+        text-shadow: 0 calc(var(--s, 1)*-1.2em) 0 #000, 0 0 0 #000;
     }
 }
 
