@@ -170,7 +170,7 @@ body {
         animation: grow-img linear both;
         -webkit-animation: grow-img linear both;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 90%;
     }
 }
 
@@ -729,7 +729,6 @@ body {
     from {
         width: 40px;
     }
-
     to {
         width: 64px;
     }
