@@ -422,10 +422,9 @@
     <script>
         window.addEventListener("load", function () {
             const loader = document.getElementById("loader-content");
-            loader.classList.add('show-loader');
 
             setTimeout(() => {
-                loader.classList.remove('show-loader');
+                loader.classList.add('hide-loader');
             }, 3000);
 
             const texto = "Berenice y Brayan";
