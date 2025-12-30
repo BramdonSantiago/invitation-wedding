@@ -422,9 +422,10 @@
     <script>
         window.addEventListener("load", () => {
             const loader = document.getElementById("loader-content");
+            loader.classList.add('show-loader');
 
             setTimeout(() => {
-                loader.style.display = "none";
+                loader.classList.remove('show-loader');
             }, 3000);
         });
     </script>
