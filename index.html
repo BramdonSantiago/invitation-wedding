@@ -418,7 +418,15 @@
         <div>
             <audio id="music" src="audio/AliciaKeys-IfIAin'tGotYou.mp3"></audio>
             <div class="music-content">
-                <i id="control-music" class="fa-solid fa-play"></i>
+                <i id="btn-control-music" class="fa-solid fa-play"></i>
+            </div>
+        </div>
+
+        <div id="music-init-content" class="music-init-content">
+            <div class="flex flex-col gap-4 px-6">
+                <p class="text-center mb-4">Elige una opción para comenzar</p>
+                <button id="btn-control-music-init" class="btn btn-primary">Versión con música</button>
+                <button id="btn-no-music-init" class="btn btn-primary">Versión sin música</button>
             </div>
         </div>
 
@@ -431,29 +439,57 @@
     <script>
         window.addEventListener("load", function () {
             const loader = document.getElementById("loader-content");
+
+            const musicInitContent = document.getElementById("music-init-content");
+            const btnControlMusicInit = document.getElementById("btn-control-music-init");
+            const btnNoMusicInit = document.getElementById("btn-no-music-init");
+
+            const music = document.getElementById("music");
+            const btnControlMusic = document.getElementById("btn-control-music");
+
             document.body.classList.add('no-scroll');
 
             setTimeout(() => {
                 loader.classList.add('hide-loader');
-                document.body.classList.remove('no-scroll');
             }, 3000);
 
-            const texto = "Berenice y Brayan";
-            const elementoTexto1 = "texto";
 
-            let i = 0;
-            function escribir(elementoTexto) {
-                let elementoHTML = document.getElementById(elementoTexto);
-                if (i < texto.length) {
-                    elementoHTML.textContent += texto.charAt(i);
-                    i++;
-                    setTimeout(() => escribir(elementoTexto), 90); // velocidad
+            btnControlMusicInit.addEventListener("click", function () {
+                music.play();
+                musicInitContent.classList.add('hide-music-init-content');
+                btnControlMusic.classList.add('fa-pause');
+                document.body.classList.remove('no-scroll');
+                typeNamesWedding();
+            })
+            btnNoMusicInit.addEventListener("click", function () {
+                musicInitContent.classList.add('hide-music-init-content');
+                document.body.classList.remove('no-scroll');
+                typeNamesWedding();
+            })
+
+
+            function typeNamesWedding() {
+                const texto = "Berenice y Brayan";
+                const elementoTexto1 = "texto";
+    
+                let i = 0;
+                function escribir(elementoTexto) {
+                    let elementoHTML = document.getElementById(elementoTexto);
+                    if (i < texto.length) {
+                        elementoHTML.textContent += texto.charAt(i);
+                        i++;
+                        setTimeout(() => escribir(elementoTexto), 90);
+                    }
                 }
+    
+                setTimeout(() => {
+                    escribir(elementoTexto1);
+                }, 1000);
             }
-
-            setTimeout(() => {
-                escribir(elementoTexto1);
-            }, 4000);
+                
+            
+            
+            
         });
     </script>
 
@@ -607,18 +643,18 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const music = document.getElementById("music");
-            const controlMusic = document.getElementById("control-music");
+            const btnControlMusic = document.getElementById("btn-control-music");
 
-            controlMusic.addEventListener("click", controlTheMusic);
+            btnControlMusic.addEventListener("click", controlTheMusic);
 
             function controlTheMusic() {
-                if (controlMusic.classList.contains('fa-pause') && music.play) {
-                    controlMusic.classList.remove('fa-pause');
-                    controlMusic.classList.add('fa-play');
+                if (btnControlMusic.classList.contains('fa-pause')) {
+                    btnControlMusic.classList.remove('fa-pause');
+                    btnControlMusic.classList.add('fa-play');
                     music.pause();
                 } else {
-                    controlMusic.classList.remove('fa-play');
-                    controlMusic.classList.add('fa-pause');
+                    btnControlMusic.classList.remove('fa-play');
+                    btnControlMusic.classList.add('fa-pause');
                     music.play();
                 }
             }
