@@ -30,7 +30,7 @@
                 <p class="message-top">SAVE <br><span>The</span> DATE</p>
             </div>
             <div class="bottom-hero">
-                <p id="texto" class="names-wedding"></p>
+                <p id="names-wedding" class="names-wedding"></p>
                 <div>
                     <p class="date-wedding">19.12.26</p>
                     <p class="location-wedding">Cerano, Gto.</p>
@@ -424,7 +424,7 @@
 
         <div id="music-init-content" class="music-init-content">
             <div class="flex flex-col gap-4 px-6">
-                <p class="text-center mb-4">Elige una opción para comenzar</p>
+                <p id="music-init-text" class="text-center mb-4"></p>
                 <button id="btn-control-music-init" class="btn btn-secondary">Versión con música</button>
                 <button id="btn-no-music-init" class="btn btn-outline-secondary">Versión sin música</button>
             </div>
@@ -451,7 +451,10 @@
 
             setTimeout(() => {
                 loader.classList.add('hide-loader');
+                typeText("Elige una opción para comenzar", "music-init-text");
             }, 3000);
+
+
 
 
             btnControlMusicInit.addEventListener("click", function () {
@@ -459,31 +462,28 @@
                 musicInitContent.classList.add('hide-music-init-content');
                 btnControlMusic.classList.add('fa-pause');
                 document.body.classList.remove('no-scroll');
-                typeNamesWedding();
+                typeText("Berenice y Brayan", "names-wedding");
             })
             btnNoMusicInit.addEventListener("click", function () {
                 musicInitContent.classList.add('hide-music-init-content');
                 document.body.classList.remove('no-scroll');
-                typeNamesWedding();
+                typeText("Berenice y Brayan", "names-wedding");
             })
 
 
-            function typeNamesWedding() {
-                const texto = "Berenice y Brayan";
-                const elementoTexto1 = "texto";
-    
+            function typeText(text, elementHTML) {
                 let i = 0;
-                function escribir(elementoTexto) {
-                    let elementoHTML = document.getElementById(elementoTexto);
-                    if (i < texto.length) {
-                        elementoHTML.textContent += texto.charAt(i);
+                function escribir(elementHTML) {
+                    let elementoHTML = document.getElementById(elementHTML);
+                    if (i < text.length) {
+                        elementoHTML.textContent += text.charAt(i);
                         i++;
-                        setTimeout(() => escribir(elementoTexto), 90);
+                        setTimeout(() => escribir(elementHTML), 90);
                     }
                 }
     
                 setTimeout(() => {
-                    escribir(elementoTexto1);
+                    escribir(elementHTML);
                 }, 1000);
             }
                 
