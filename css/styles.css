@@ -444,6 +444,12 @@ body {
     }
 }
 
+.section-getting-married {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 .section-our-parents {
     color: #FFF;
     /* background-color: #9eb4cc; */
