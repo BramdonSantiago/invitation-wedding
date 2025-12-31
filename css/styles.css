@@ -388,6 +388,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     box-shadow: none;
+    border: 2px solid transparent;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -401,7 +402,7 @@ body {
         }
     }
     &.btn-outline-primary {
-        border: 2px solid #9eb4cc;
+        border-color: #9eb4cc;
         color: #6984a1;
     }
     &.btn-secondary {
@@ -412,7 +413,7 @@ body {
         }
     }
     &.btn-outline-secondary {
-        border: 2px solid #9d8a8d;
+        border-color: #9d8a8d;
         color: #7e575d;
     }
 }
