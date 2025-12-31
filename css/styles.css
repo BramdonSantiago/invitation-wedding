@@ -367,7 +367,7 @@ body {
         align-items: center;
         line-height: 1;
         font-size: 1.125rem;
-        color: #525252;
+        color: #666;
 
         &.time-event {
             font-size: 1.250rem;
@@ -450,7 +450,7 @@ body {
         color: #222;
     }
     p {
-        color: #525252;
+        color: #666;
     }
 }
 
@@ -536,7 +536,7 @@ body {
 
         .names-godparents {
             font-size: 1.125rem;
-            color: #525252;
+            color: #666;
             /* line-height: 1; */
         }
     }
@@ -566,7 +566,7 @@ body {
 
         .singular-item {
             width: calc(50% - 2.5rem);
-            color: #525252;
+            color: #666;
 
             @media(min-width: 1200px) {
                 width: calc(50% - 5rem);
@@ -631,7 +631,7 @@ body {
     }
 
     p {
-        color: #525252;
+        color: #666;
     }
 }
 
