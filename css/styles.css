@@ -447,6 +447,10 @@ body {
 .section-getting-married {
     h2 {
         font-size: 2rem;
+        color: #222;
+    }
+    p {
+        color: #525252;
     }
 }
 
