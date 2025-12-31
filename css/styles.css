@@ -371,7 +371,7 @@ body {
 
         &.time-event {
             font-size: 1.250rem;
-            color: #525252;
+            color: #393939;
             /* transform-origin: center; */
             animation: grow-title linear both;
             -webkit-animation: grow-title linear both;
