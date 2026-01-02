@@ -414,7 +414,7 @@ body {
     }
     &.btn-outline-primary {
         border-color: var(--color-primary);
-        color: var(--color-primary);
+        color: var(--color-primary-hover);
     }
     &.btn-secondary {
         background-color: var(--color-secondary);
@@ -425,7 +425,7 @@ body {
     }
     &.btn-outline-secondary {
         border-color: var(--color-secondary);
-        color: var(--color-secondary);
+        color: var(--color-secondary-hover);
     }
 }
 
