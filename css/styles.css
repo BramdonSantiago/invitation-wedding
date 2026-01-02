@@ -731,6 +731,7 @@ body {
         color: var(--color-text-dark-1);
         /* font-size: 1.250rem; */
         font-size: 2rem;
+        position: relative;
     }
 }
 
