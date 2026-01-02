@@ -592,17 +592,22 @@ body {
         .singular-item {
             width: calc(50% - 2.5rem);
             color: var(--color-text-gray-1);
-
+            animation-timeline: view();
+            animation-range: 100px 250px;
             @media(min-width: 1200px) {
                 width: calc(50% - 5rem);
             }
 
             &:nth-child(2n + 1) {
                 text-align: end;
+                animation: slideLeft linear forwards;
+                -webkit-animation: slideLeft linear forwards;
             }
 
             &:nth-child(2n) {
                 margin-top: 10rem;
+                animation: slideRight linear forwards;
+                -webkit-animation: slideRight linear forwards;
             }
 
             .step-number {
@@ -641,6 +646,39 @@ body {
             translate: -50% 0;
             z-index: 1;
         }
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
     }
 }
 
