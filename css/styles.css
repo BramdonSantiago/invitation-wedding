@@ -667,9 +667,22 @@ body {
             width: 18px;
             translate: -50% 0;
             z-index: 1;
+            /* animation: indicator linear forwards;
+            -webkit-animation: indicator linear forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%; */
         }
     }
 }
+
+/* @keyframes indicator {
+    from {
+        translate: -50% 0;
+    }
+    to {
+        translate: -50% 400px;
+    }
+} */
 
 
 
