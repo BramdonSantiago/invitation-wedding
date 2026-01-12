@@ -9,13 +9,15 @@
 }
 
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 body {
     font-family: "Jost", sans-serif;
 }
+
+
 
 .container {
     padding-left: 1.5rem;
