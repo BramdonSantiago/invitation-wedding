@@ -98,14 +98,17 @@ body {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+
     &.show-loader {
         opacity: 1;
         visibility: visible;
     }
+
     &.hide-loader {
         opacity: 0;
         visibility: hidden;
     }
+
     /*.loader {
         width: fit-content;
         font-size: 40px;
@@ -129,6 +132,7 @@ body {
         /* font-family: "Alex Brush", cursive; */
         font-family: "Square Peg", cursive;
     }
+
     .loader:before,
     .loader:after {
         content: "Cargando...";
@@ -148,6 +152,7 @@ body {
 }
 
 @keyframes l15 {
+
     80%,
     100% {
         text-shadow: 0 calc(var(--s, 1)*-1.2em) 0 #000, 0 0 0 #000;
@@ -404,24 +409,34 @@ body {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+
     &.btn-primary {
         background-color: var(--color-primary);
         color: #FFF;
-        &:hover, &:focus, &:active {
+
+        &:hover,
+        &:focus,
+        &:active {
             background-color: var(--color-primary-hover);
         }
     }
+
     &.btn-outline-primary {
         border-color: var(--color-primary);
         color: var(--color-primary-hover);
     }
+
     &.btn-secondary {
         background-color: var(--color-secondary);
         color: #FFF;
-        &:hover, &:focus, &:active {
+
+        &:hover,
+        &:focus,
+        &:active {
             background-color: var(--color-secondary-hover);
         }
     }
+
     &.btn-outline-secondary {
         border-color: var(--color-secondary);
         color: var(--color-secondary-hover);
@@ -474,6 +489,7 @@ body {
         font-size: 2rem;
         color: var(--color-text-dark-1);
     }
+
     p {
         color: var(--color-text-gray-1);
     }
@@ -583,7 +599,6 @@ body {
         flex-wrap: wrap;
         gap: 2.5rem;
         position: relative;
-        overflow: hidden;
 
         @media(min-width: 1200px) {
             gap: 5rem;
@@ -592,22 +607,17 @@ body {
         .singular-item {
             width: calc(50% - 2.5rem);
             color: var(--color-text-gray-1);
-            animation-timeline: view();
-            animation-range: 100px 250px;
+
             @media(min-width: 1200px) {
                 width: calc(50% - 5rem);
             }
 
             &:nth-child(2n + 1) {
                 text-align: end;
-                animation: slideLeft linear forwards;
-                -webkit-animation: slideLeft linear forwards;
             }
 
             &:nth-child(2n) {
                 margin-top: 10rem;
-                animation: slideRight linear forwards;
-                -webkit-animation: slideRight linear forwards;
             }
 
             .step-number {
@@ -625,6 +635,11 @@ body {
                 font-size: 1.125rem;
             }
         }
+
+        /* .singular-item {
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        } */
 
         &::after {
             content: "";
@@ -649,38 +664,7 @@ body {
     }
 }
 
-@keyframes slideLeft {
-    from {
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-}
-@keyframes slideRight {
-    from {
-        transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        -moz-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-        -o-transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-}
+
 
 .section-she-said-yes {
     h2 {
@@ -746,10 +730,12 @@ body {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
+
     &.hide-music-init-content {
         opacity: 0;
         visibility: hidden;
     }
+
     p {
         font-family: "Square Peg", cursive;
         color: var(--color-text-dark-1);
@@ -811,10 +797,12 @@ body {
         font-size: 1.5rem;
     }
 }
+
 @keyframes grow-img {
     from {
         width: 40px;
     }
+
     to {
         width: 64px;
     }
@@ -838,5 +826,72 @@ body {
         -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -o-transform: translateY(0);
+    }
+}
+
+
+.singular-item {
+    &:nth-child(2n + 1) {
+        /* opacity: 0;
+        visibility: hidden; */
+        translate: -100% 0;
+        animation: slide-left linear forwards;
+        -webkit-animation: slide-left linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+    &:nth-child(2n) {
+        /* opacity: 0;
+        visibility: hidden; */
+        translate: 100% 0;
+        animation: slide-right linear forwards;
+        -webkit-animation: slide-right linear forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    } 
+}
+
+@keyframes slide-left {
+    from {
+        /* opacity: 0;
+        visibility: hidden; */
+        translate: -100% 0;
+    }
+
+    to {
+        /* opacity: 1;
+        visibility: visible; */
+        translate: 0 0;
+    }
+}
+@keyframes slide-right {
+    from {
+        /* opacity: 0;
+        visibility: hidden; */
+        translate: 100% 0;
+    }
+
+    to {
+        /* opacity: 1;
+        visibility: visible; */
+        translate: 0 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
     }
 }
