@@ -17,6 +17,11 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+html,
+body {
+    overflow-x: clip;
+}
+
 
 
 .container {
@@ -844,6 +849,7 @@ body {
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
+
         &:nth-child(2n) {
             transform: translateX(100%);
             -webkit-transform: translateX(100%);
@@ -854,9 +860,10 @@ body {
             animation-timeline: view();
             animation-range: entry 0% cover 40%;
         }
-    
+
     }
 }
+
 @keyframes slide-left {
     from {
         transform: translateX(-100%);
@@ -874,6 +881,7 @@ body {
         -o-transform: translateX(0);
     }
 }
+
 @keyframes slide-right {
     from {
         transform: translateX(100%);
@@ -891,4 +899,3 @@ body {
         -o-transform: translateX(0);
     }
 }
-
