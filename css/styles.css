@@ -662,7 +662,7 @@ body {
 
         .arrow-indicator {
             position: absolute;
-            top: -140px;
+            top: -70px;
             left: 50%;
             width: 18px;
             translate: -50% 0;
