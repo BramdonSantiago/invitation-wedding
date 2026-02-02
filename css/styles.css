@@ -31,6 +31,14 @@ body {
 .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    @media(min-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media(min-width: 1920px) {
+        max-width: 1440px;
+    }
 }
 
 .swiper {
@@ -191,6 +199,7 @@ body {
 
     img {
         width: 40px;
+        opacity: 0;
         margin-left: auto;
         margin-right: auto;
         animation: grow-img linear both;
@@ -300,6 +309,12 @@ body {
     height: 25rem;
     overflow: hidden;
 
+    @media(min-width: 768px) {
+        height: 45rem;
+    }
+    @media(min-width: 992px) {
+        height: 35rem;
+    }
     @media(min-width: 1200px) {
         height: 100%;
     }
@@ -820,10 +835,12 @@ body {
 @keyframes grow-img {
     from {
         width: 40px;
+        opacity: 0;
     }
 
     to {
         width: 64px;
+        opacity: 1;
     }
 }
 
