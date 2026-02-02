@@ -543,7 +543,7 @@ body {
 
     .name-parent {
         font-size: 1.125rem;
-        color: #f5f5f5;
+        color: #e1e1e1;
     }
 }
 
@@ -591,7 +591,7 @@ body {
 
         .names-godparents {
             font-size: 1.125rem;
-            color: #F5F5F5;
+            color: #e1e1e1;
             /* line-height: 1; */
         }
     }
