@@ -657,7 +657,7 @@ body {
             display: block;
             width: 1px;
             height: 100%;
-            border-left: 1px dashed var(--color-text-dark-1);
+            border-left: 1px dashed var(--color-text-gray-1);
             position: absolute;
             top: 0;
             left: 50%;
