@@ -331,8 +331,8 @@ body {
     position: relative;
     padding-top: 8rem;
     padding-bottom: 8rem;
-
-    /* &::after,
+    
+    &::after,
     &::before {
         content: "";
         display: block;
@@ -355,7 +355,7 @@ body {
     &::before {
         bottom: -100px;
         rotate: -180deg;
-    } */
+    }
 }
 
 .names-weidding-couple {
