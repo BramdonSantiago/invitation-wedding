@@ -552,7 +552,7 @@ body {
 .section-our-godparents {
     /* background-color: var(--color-background-light); */
     background-color: var(--color-primary-hover);
-    min-height: 85dvh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: center;
