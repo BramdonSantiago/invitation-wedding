@@ -360,7 +360,7 @@ body {
 
 .names-weidding-couple {
     font-family: "Alex Brush", cursive;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     /* color: #c9b37e; */
     font-size: 5rem;
     line-height: 1;
@@ -637,7 +637,7 @@ body {
             }
 
             .step-title {
-                color: var(--color-secondary);
+                color: var(--color-primary);
                 font-size: 1.250rem;
                 margin-bottom: 2rem;
             }
