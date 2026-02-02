@@ -50,7 +50,7 @@ body {
             height: 13px;
 
             &.swiper-pagination-bullet-active {
-                background-color: var(--color-secondary);
+                background-color: #FFF;
             }
         }
     }
@@ -73,7 +73,7 @@ body {
 }
 
 .swiper-container-aux {
-    background-image: url('../img/soga-7.png');
+    background-image: url('../img/soga-8.png');
     background-position: center;
     background-size: contain;
     min-height: 30rem;
@@ -547,11 +547,13 @@ body {
 }
 
 .section-our-godparents {
-    background-color: var(--color-background-light);
+    /* background-color: var(--color-background-light); */
+    background-color: var(--color-primary-hover);
     min-height: 100dvh;
 
     h2 {
-        color: var(--color-text-dark-1);
+        /* color: var(--color-text-dark-1); */
+        color: #FFF;
         /* font-size: 3.250rem; */
         font-size: 2.5rem;
         line-height: 1;
@@ -581,14 +583,14 @@ body {
 
         .type-godparent {
             font-size: 1.5rem;
-            color: var(--color-secondary);
+            color: #FFF;
             text-transform: uppercase;
             margin-bottom: 2rem;
         }
 
         .names-godparents {
             font-size: 1.125rem;
-            color: var(--color-text-gray-1);
+            color: #FFF;
             /* line-height: 1; */
         }
     }
