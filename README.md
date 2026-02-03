@@ -1,4 +1,4 @@
-Publish on:
+Published in:
 https://bramdonsantiago.github.io/invitation-wedding
 
 <br />
