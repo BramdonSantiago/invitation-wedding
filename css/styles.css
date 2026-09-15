@@ -219,7 +219,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100dvh;
+    min-height: 100vh;
     background-attachment: fixed;
     color: #FFF;
     position: relative;
@@ -296,7 +296,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100dvh;
+    min-height: 100vh;
     background-attachment: fixed;
     color: #FFF;
 
@@ -530,7 +530,7 @@ p {
     color: #FFF;
     /* background-color: var(--color-primary); */
     background-color: var(--color-primary-hover);
-    min-height: 85dvh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -572,7 +572,7 @@ p {
 .section-our-godparents {
     /* background-color: var(--color-background-light); */
     background-color: var(--color-primary-hover);
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
