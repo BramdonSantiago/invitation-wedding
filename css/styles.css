@@ -2,13 +2,13 @@
     /* --color-primary: #9eb4cc; */
     --color-primary: #B23A48;
     /* --color-primary-hover: #6984a1; */
-    --color-primary-hover: #8B1E3F;
+    /* --color-primary-hover: #8B1E3F; */
     --color-primary-hover: #5a1524;
     /* --color-secondary: #9d8a8d; */
-    --color-secondary: #8B1E3F;
+    /* --color-secondary: #8B1E3F; */
     --color-secondary: #5a1524;
     /* --color-secondary-hover: #7e575d; */
-    --color-secondary-hover: #8B1E3F;
+    /* --color-secondary-hover: #8B1E3F; */
     --color-secondary-hover: #5a1524;
     --color-text-dark-1: #353535;
     --color-text-gray-1: #666;
@@ -539,6 +539,7 @@ p {
     justify-content: center;
     h2 {
         /* font-size: 3.250rem; */
+        color: #eeddd6;
         font-size: 2.5rem;
         line-height: 1;
         font-family: "Alex Brush", cursive;
@@ -564,11 +565,12 @@ p {
 
     h3 {
         font-size: 1.5rem;
+        color: #eeddd6;
     }
 
     .name-parent {
         font-size: 1.125rem;
-        color: #e1e1e1;
+        color: #ccbeba;
     }
 }
 
@@ -581,7 +583,8 @@ p {
     justify-content: center;
     h2 {
         /* color: var(--color-text-dark-1); */
-        color: #FFF;
+        /* color: #FFF; */
+        color: #eeddd6;
         /* font-size: 3.250rem; */
         font-size: 2.5rem;
         line-height: 1;
@@ -611,14 +614,15 @@ p {
 
         .type-godparent {
             font-size: 1.5rem;
-            color: #FFF;
+            /* color: #FFF; */
+            color: #eeddd6;
             text-transform: uppercase;
             margin-bottom: 2rem;
         }
 
         .names-godparents {
             font-size: 1.125rem;
-            color: #e1e1e1;
+            color: #ccbeba;
             /* line-height: 1; */
         }
     }
