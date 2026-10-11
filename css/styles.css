@@ -681,13 +681,13 @@ p {
             .step-number {
                 color: var(--color-secondary);
                 font-size: 1.250rem;
-                font-weight: 400;
+                font-weight: 300;
             }
 
             .step-title {
                 color: var(--color-primary);
                 font-size: 1.250rem;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 1;
                 margin-bottom: 1rem;
             }
