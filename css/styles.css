@@ -486,7 +486,7 @@ p {
 .text-information-date-wedding {
     font-size: 1.3rem;
     color: var(--color-text-dark-1);
-
+    font-weight: 400;
     @media(min-width: 1200px) {
         font-size: 1.6rem;
     }
