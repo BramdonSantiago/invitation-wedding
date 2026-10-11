@@ -526,7 +526,8 @@ p {
 
 .section-getting-married {
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 300;
         color: var(--color-text-dark-1);
     }
 
@@ -729,6 +730,7 @@ p {
 .section-she-said-yes {
     h2 {
         font-size: 2.5rem;
+        font-weight: 300;
         line-height: 1;
         color: var(--color-text-dark-1);
 
