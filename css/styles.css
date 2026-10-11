@@ -681,7 +681,7 @@ p {
             .step-number {
                 color: var(--color-secondary);
                 font-size: 1.250rem;
-                font-weight: 300;
+                font-weight: 400;
             }
 
             .step-title {
