@@ -532,6 +532,7 @@ p {
 
     p {
         color: var(--color-text-gray-1);
+        font-weight: 400;
     }
 }
 
@@ -736,6 +737,7 @@ p {
 
     p {
         color: var(--color-text-gray-1);
+        font-weight: 400;
     }
 }
 
