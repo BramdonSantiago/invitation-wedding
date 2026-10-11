@@ -511,6 +511,7 @@ p {
             color: #525252 !important;
             font-family: "Jost", sans-serif !important;
             font-size: 0.875rem !important;
+            font-weight: 400 !important;
         }
     }
 }
