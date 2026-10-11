@@ -229,7 +229,7 @@ p {
     background-attachment: fixed;
     color: #FFF;
     position: relative;
-
+    overflow: hidden;
     .top-hero {
         position: absolute;
         top: 20px;
