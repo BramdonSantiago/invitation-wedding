@@ -23,6 +23,7 @@
 
 body {
     font-family: "Jost", sans-serif;
+    background-color: var(--color-background-light);
 }
 
 html,
