@@ -851,7 +851,7 @@ p {
 }
 
 .wave-letter-out {
-    animation: waveOut 0.6s ease forwards;
+    animation: waveLetterOut 0.6s ease forwards;
 }
 
 @keyframes waveLetter {
