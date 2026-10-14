@@ -560,8 +560,7 @@
                 <span class="letter" style="--delay: 500ms">B</span><span class="letter"
                     style="--delay: 550ms">r</span><span class="letter" style="--delay: 600ms">a</span><span
                     class="letter" style="--delay: 650ms">y</span><span class="letter"
-                    style="--delay: 700ms">a</span><span class="letter" style="--delay: 750ms">n</span>
-            </p>
+                    style="--delay: 700ms">a</span><span class="letter" style="--delay: 750ms">n</span></p>
         </footer>
 
         <div>
@@ -817,11 +816,9 @@
             window.addEventListener("scroll", () => {
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 40) {
                     let letters = document.querySelectorAll(".names-weidding-couple-footer .letter")
-                    letters.forEach((letter, i) => {
-                        letter.style.setProperty('--delay', `${i * 100}ms`);
-                        letter.classList.add('wave-letter');
+                    letters.forEach(letter => {
+                        letter.classList.add("wave-letter");
                     });
-
                 } else {
                     let letters = document.querySelectorAll(".names-weidding-couple-footer .letter");
                     letters.forEach(letter => {
