@@ -817,12 +817,14 @@
                 if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 40) {
                     let letters = document.querySelectorAll(".names-weidding-couple-footer .letter")
                     letters.forEach(letter => {
+                        letter.classList.remove("wave-letter-out");
                         letter.classList.add("wave-letter");
                     });
                 } else {
                     let letters = document.querySelectorAll(".names-weidding-couple-footer .letter");
                     letters.forEach(letter => {
                         letter.classList.remove("wave-letter");
+                        letter.classList.add("wave-letter-out");
                     });
                 }
             });

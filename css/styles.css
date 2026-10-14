@@ -850,7 +850,9 @@ p {
     animation-delay: var(--delay, 0ms);
 }
 
-
+.wave-letter-out {
+    animation: waveOut 0.6s ease forwards;
+}
 
 @keyframes waveLetter {
     0% {
@@ -860,6 +862,17 @@ p {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes waveLetterOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(90px);
     }
 }
 
