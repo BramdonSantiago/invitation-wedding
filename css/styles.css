@@ -858,9 +858,9 @@ p {
         transform: translateY(90px);
     }
 
-    65% {
+    /* 65% {
         opacity: 1;
-    }
+    } */
 
     100% {
         opacity: 1;
