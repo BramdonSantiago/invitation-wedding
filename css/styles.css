@@ -846,7 +846,7 @@ p {
 }
 
 .waveLetter {
-    animation: waveLetter 1s cubic-bezier(.22, .68, 0, 1.05) forwards;
+    animation: waveLetter 2s cubic-bezier(.22, .68, 0, 1.05) forwards;
     animation-delay: var(--delay, 0ms);
 }
 
