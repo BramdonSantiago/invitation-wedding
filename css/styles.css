@@ -851,7 +851,7 @@ p {
 }
 
 .wave-letter-out {
-    animation: waveLetterOut 1s cubic-bezier(.22, .68, 0, 1.05) forwards;
+    animation: waveLetterOut 1s ease-out forwards;
 }
 
 @keyframes waveLetter {
