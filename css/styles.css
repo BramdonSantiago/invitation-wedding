@@ -656,7 +656,6 @@ p {
 
 .section-minute-to-minute {
     background-color: var(--color-background-light);
-
     h2 {
         font-family: "Alex Brush", cursive;
         font-size: 2.5rem;
@@ -670,7 +669,7 @@ p {
         flex-wrap: wrap;
         gap: 2.5rem;
         position: relative;
-
+        overflow: clip;
         @media(min-width: 1200px) {
             gap: 5rem;
         }
