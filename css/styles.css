@@ -414,6 +414,7 @@ p {
 }
 
 .singular-event-wedding {
+    border: 1px solid #cecece;
     background-color: #FFF;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     display: flex;
@@ -425,7 +426,33 @@ p {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    position: relative;
+    overflow: clip;
     corner-shape: scoop;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+        border-top: 2px dashed #dbdbdb;
+        border-bottom: 2px dashed #dbdbdb;
+    }
+    /* &:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: #FFF;
+        border: 1px solid #cecece;
+        border-radius: 50%;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    } */
 
     .data-event-widding {
         display: flex;
