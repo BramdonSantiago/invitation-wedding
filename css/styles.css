@@ -418,7 +418,7 @@ p {
 }
 
 .singular-event-wedding {
-    border: 1px solid #dbdbdb;
+    border: 1px solid #ccc;
     background-color: #FFF;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     display: flex;
