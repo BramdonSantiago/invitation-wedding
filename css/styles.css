@@ -407,10 +407,14 @@ p {
 
 .title-text-event-wedding {
     text-align: center;
-    font-size: 2.250rem;
+    font-size: 2rem;
+    line-height: 1;
     font-family: "Alex Brush", cursive;
     color: var(--color-text-dark-1);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    @media(min-width: 1200px) {
+        font-size: 2.250rem; 
+    }
 }
 
 .singular-event-wedding {
@@ -429,6 +433,7 @@ p {
     position: relative;
     overflow: clip;
     corner-shape: scoop;
+    z-index: 1;
     &::before {
         content: "";
         display: block;
@@ -439,6 +444,7 @@ p {
         height: calc(100% - 50px);
         border-top: 2px dashed #dbdbdb;
         border-bottom: 2px dashed #dbdbdb;
+        z-index: -1;
     }
     /* &:after {
         content: "";
